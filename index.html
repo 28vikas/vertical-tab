@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tab">
+      
+        <div class="btn-div">
+            <h3 class="btn" id="btn1" onclick="show(london,paris,tokyo,btn1,btn2,btn3)">London</h3>
+            <h3 class="btn" id="btn2" onclick="show(paris, london, tokyo,btn2,btn1,btn3)">Paris</h3>
+            <h3 class="btn" id="btn3" onclick="show(tokyo,london,paris,btn3,btn1,btn2)">Tokyo</h3>
+        </div>
+
+        
+
+            <div class="contain" id="london">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+    
+            <div class="contain" id="paris">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+    
+             <div class="contain" id="tokyo">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+     
+
+        
+
+    </div>
+
+
+    <script>
+     
+     function show(a,b,c, x,y,z){
+        a.style.display = "block"
+        b.style.display = "none"
+        c.style.display = "none"
+        x.style.backgroundColor = "yellow"
+        y.style.backgroundColor = " rgb(152, 146, 146)"
+        z.style.backgroundColor = " rgb(152, 146, 146)"
+
+
+
+
+     }
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.tab{
+    border: 2px solid red;
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    height: 188px;
+    display: flex;
+   
+    
+}
+
+.btn-div{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    background-color: rgb(152, 146, 146);
+}
+
+.btn{
+    display: inline-block;
+    /* border: 1px solid red; */
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+
+}
+
+.btn:hover{
+    background-color: yellow !important;
+}
+
+#paris , #tokyo{
+    display: none;
+}
+
+.contain{
+    padding: 20px 30px;
+}
